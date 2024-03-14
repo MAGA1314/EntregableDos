@@ -25,6 +25,13 @@ function tienenMismaLongitud(str1, str2) {
     // Devuelve "true" si las dos strings tienen la misma longitud
     // De lo contrario, devuelve "false"
     // Tu código:
+    lon1 = str1.length;
+    lon2 = str2.length;
+    if(lon1 == lon2){
+      return true;
+    }else{
+      return false;
+    }
   }
 
   function esPositivo(numero) {
@@ -37,6 +44,14 @@ function tienenMismaLongitud(str1, str2) {
      * Si el número es 0, devuelve false
      * Tu código:
      */
+    if(numero > 0){
+      return "Es positivo"
+    }
+    if(numero == 0){
+      return false;
+    }else{
+      return "Es negativo"
+    }
   
     
   }
@@ -49,6 +64,18 @@ function tienenMismaLongitud(str1, str2) {
     //En caso que el color recibido sea "orange", devuelve --> "This is orange"
     //Caso default: devuelve --> "Color not found"
     //Usar el statement Switch.
+    switch (color) {
+      case "blue":
+          return "This is blue";
+      case "red":
+          return "This is red";
+      case "green":
+          return "This is green";
+      case "orange":
+          return "This is orange";
+      default:
+          return "Color not found";
+  }
     
   }
 
@@ -57,7 +84,17 @@ function tienenMismaLongitud(str1, str2) {
     // Si "numero" es divisible entre 5, devuelve "buzz"
     // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
     // De lo contrario, devuelve el numero
-    
+    if(numero%3 ===0 && numero % 5 ===0){
+      return "fizzbuzz";
+    }
+    if(numero%3 ===0){
+      return "fizz";
+    }
+    if(numero % 5 ===0){
+      return "buzz";
+    }else{
+      return numero;
+    }
   }
 
   const devolverPrimerElemento = (array) => {
