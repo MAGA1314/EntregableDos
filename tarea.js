@@ -4,6 +4,7 @@ const suma = (a,b) =>{
      * La función debe devolver la suma de los parámetros de entrada
      * Debes generar el código para que la función haga lo solicitado.
      */
+    return a+b;
     
     
 }
@@ -12,7 +13,11 @@ const sonIguales = (x, y)=>{
     // Devuelve "true" si "x" e "y" son iguales
     // De lo contrario, devuelve "false"
     // Debes generar el código para que la función haga lo solicitado.
-
+    if(x == y){
+      return true;
+    }else{
+      return false;
+    }
     
 }
 
